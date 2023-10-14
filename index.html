@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <!-- <div class="mobile">
+                <p>9.30 AM</p>
+            </div> -->
+            <h2 class="title">Temperature Converter</h2>
+            <!-- showing result here -->
+            <div class="result">
+                <span class="result-heading">Result (Celsius)</span>
+                <h2 class="celsius-values" id="celsius">1</h2>
+            </div>
+            <!-- input feild -->
+            <div class="degree-type">
+                <!-- for degree  -->
+                <div class="degree-field">
+                    <label for="degree">Degrees</label>
+                    <input type="number" name="degree" id="degree">
+                </div>
+                <!-- for option selection -->
+                <div class="temp-field">
+                    <label for="temp-type">Type</label>
+                    <select name="Temperature" id="temp-type" autocomplete="on">
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="script2.js"></script>
+</body>
+
+</html>
